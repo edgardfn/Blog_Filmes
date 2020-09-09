@@ -1,0 +1,326 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+body {
+    /* fonte importada: */
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+
+    
+}
+
+.inicial {
+    /* IMAGEM DE FUNDO: */
+    background-image: url("/public/img/capa-madmax2.jpg") ;
+
+    background-size: cover; /* COBRIR TODA A PARTE QUE ELA VAI FICAR */
+    background-repeat: no-repeat; /* NÃO SE REPETE, PADRÃO PARA SE REPETIR  */
+    
+    padding: 20px; /* margem interna da imagem do header */
+    box-sizing: border-box; /* para padding não aumentar tamanho do elemento */
+
+    width: 100%; /* LARGURA DA IMAGEM */
+    height: 90vh; /* ALTURA, 1/100 da altura da viewport, altura do navegador é 900px, 1vh equivale a 9px */
+
+    /* ALINHAR DIV CONTEUDO NO FINAL DA OBJETO: */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.navbar {
+    
+    /* DEIXAR ITENS DO NAVEBAR NA MESMA LINHA:  */
+    display: flex;
+    justify-content: space-between ;
+
+    /* espaçamento direito e esquerdo: */
+    margin-left: 162.5px;
+    margin-right: 162.5px;
+    
+    /* cor do texto: */
+    color: rgb(255, 255, 255);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-transform: uppercase; /* letras em maiusculas */
+    
+    font-style: none;
+
+    
+}
+
+.navbar-menu a {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-menu a:hover {
+    color: yellow;
+}
+
+
+.navbar .navbar-title {
+   
+    cursor: pointer; /* MAOZINHA AO PASSAR SOBRE */
+    
+}
+
+
+
+
+.navbar .navbar-menu {
+    
+    display: flex; /* ALINHAR links DO NAVGAR-MENU NA MESMA LINHA */
+    align-items: center; /* alinhar no centro */
+    
+}
+
+.navbar-menu a {
+    margin: 0px 25px; /* ESPACAMENTO DIREITA E ESQUERDA ENTRE OS LInks DO NAVBAR-MENU  */
+    text-decoration-line: none; /* tira o sublinhado padrão dos links */
+
+    
+}
+
+.inicial .navbar-user img {
+    height: 45px; /* TAMANHO DA IMAGEM */
+    width: 45px; /* TAMANHO DA IMAGEM */
+    border-radius: 50%; /* DEIXAR IMAGEM COM BORDAS ARREDONDADAS */
+
+    margin-right: 15px;
+}
+
+.navbar-user {
+    /* deixar foto e nome do usuário alinhados na mesma linha: */
+    display: flex;
+    /* alinhar foto e nome do usuário no centro  */
+    align-items: center;
+}
+
+
+
+.conteudo {
+    width: 960px;
+    height: 384px;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+
+    margin: 0 auto;
+
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    */
+
+    
+
+    
+
+}
+
+.conteudo h2 {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin: 0px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+
+    
+    
+    
+}
+
+.conteudo .genres {
+    display: flex;
+    margin: 15px 0px 30px 0px;
+}
+
+.conteudo .genres a {
+    color: rgb(255, 255, 255);
+    margin: 0px 15px 0px 0px;
+    font-size: 13px;
+
+    text-transform: uppercase; /* letras em maiusculas */
+
+    text-decoration-line: none;
+
+    
+}
+
+.conteudo .where {
+    padding: 20px 0;
+}
+
+.conteudo .button-trailer {
+    background-color: #e4bb23;
+    border-radius: 40px;
+    padding: 15px 50px;
+    font-size: 15px;
+    text-decoration: none;
+    text-decoration-style: solid;
+    color: #000;
+
+    display: inline-block;
+
+    transition: 0.8s;
+
+}
+
+.button-trailer:hover {
+   background-color: gray   ; 
+   
+}
+
+.button-trailer i {
+    margin-left: 10px;
+   
+}
+
+.conteudo .where {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.conteudo p:last-child { /* ultimo filho p da class conteudo */
+    color: #bc9a1d;
+
+}
+
+.conteudo p {
+    margin: 14px 0;
+}
+
+/* LISTAS DE FILMES: */
+
+
+
+.lista-menu {
+    
+    
+    list-style-type: none; /* TIRAR MARCADOR PADRÃO DA LISTA */
+    text-transform: uppercase;
+    
+    display: flex;
+    justify-content: center;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+ 
+
+.lista .lista-menu .lista-menu-item a {
+    
+    color: #e4bb23;
+    text-decoration: none;
+
+    font-weight: 13px;
+
+    padding: 25px 0px;
+
+}
+
+.lista-menu li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* lista de filmes: */
+
+/*  width: 230px;
+    height: 440px;
+*/
+
+.movie {
+    width: 230px;
+    height: 440px;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.list-movies {
+    display: flex;
+    flex-wrap: wrap; /* Quebra a linha assim que um dos flex itens não puder mais ser compactado. */
+    
+    padding-left: 160px;
+    padding-right: 160px;
+    box-sizing: border-box;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 340px;
+
+    
+}
+
+
+
+.movie-description p:last-child { /* segundo filho da classe movie description */
+    color: #e4bb23;
+}
+
+.movie-footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.movie-footer i {
+    opacity: 0.3;
+}
+
+.movie .movie-description p:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* RODAPÉ: */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 160px;
+    padding-right: 160px;
+    box-sizing: border-box;
+
+
+}
+
+.network {
+    opacity: 0.5;
+
+    
+}
+
+.network i {
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.movie-footer:last-child {
+    font-weight: bold;
+}
